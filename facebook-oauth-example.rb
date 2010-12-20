@@ -42,7 +42,7 @@ get "/callback" do
   http.use_ssl = true
   response = http.request request
 
-  session[:oauth][:access_token] = CGI.parse(response.body)["access_token"]
+  session[:oauth][:access_token] = CGI.parse(response.body)["access_token"][0]
   redirect "/"
 end
 
