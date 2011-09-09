@@ -51,7 +51,7 @@ get "/logout" do
   redirect "/"
 end
 
-use_in_file_templates!
+enable :inline_templates
 
 __END__
 
