@@ -15,5 +15,5 @@ That's it? Yep!
 
 Now you can give it a spin:
 
-    ruby facebook-oauth-example.rb
+    ruby -rubygems facebook-oauth-example.rb
     open http://localhost:4567/
